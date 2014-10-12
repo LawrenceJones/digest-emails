@@ -4,7 +4,7 @@ Config = require('../config')
 { CliTasks } = require('./helpers/cli_tasks')
 
 DigestCli = require('commander')
-  .version '0.0.1'
+  .version require('../package.json')['version']
   .option '-s, --send [email.md]', 'Send email'
   .option '-c, --compile [email.md]', 'Compile email source'
   .option '-o, --output-dir [./compiled]', 'Output for compiled email', Config.outputDir
