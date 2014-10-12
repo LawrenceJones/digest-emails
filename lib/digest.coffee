@@ -34,5 +34,8 @@ class Digest
     FS.readFile(stylFile, 'utf8')
       .then Q.nbind(stylus.render, stylus)
 
-module.exports = { Digest }
+# Export everything for external usage
+module.exports = _.extend {
+  Config, Digest, Email
+}, require('./helpers/email_account')
 
