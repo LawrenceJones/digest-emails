@@ -1,10 +1,11 @@
 {
   "name": "icdocsoc-email-generator",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Pete Hamilton <peterejhamilton@gmail.com>",
   "description": "IC DoCSoc Emails Generator",
   "license": "MIT",
   "main": "./lib/digest.coffee",
+  "bin": "./lib/cli.coffee",
   "dependencies": {
     "moment": "",
     "jade": "",

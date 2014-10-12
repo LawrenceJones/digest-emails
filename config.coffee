@@ -8,7 +8,7 @@ Config = {
   stylTemplate: path.join(BASE, 'template.styl')
   jadeTemplate: path.join(BASE, 'template.jade')
 
-  outputDir: path.join(__dirname, 'compiled')
+  outputDir: process.cwd() # setup in current running directory
 
   dateFormat: 'MMMM Do YYYY'
   showSocial: false
